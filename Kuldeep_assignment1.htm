@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+#myDIV{
+  display: none;
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: pink;
+  margin-top: 20px;
+}
+
+#mybox1{
+  display: none;
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: pink;
+  margin-top: 20px;
+}
+
+
+#myDIV1{
+  display: none;
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: pink;
+  margin-top: 20px;
+}
+
+#myDIV2{
+  display: none;
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: pink;
+  margin-top: 20px;
+}
+
+#myDIV3{
+  display: none;
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: pink;
+  margin-top: 20px;
+  
+}
+
+#temp1{
+  display: none;
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: pink;
+  margin-top: 20px;
+}
+
+</style>
+</head>
+
+<style>
+
+.car{
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.card {
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0.2,0.2);
+  transition: 0.3s;
+  width: 40%;
+  background-color: pink;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+</style>
+
+
+<body>
+
+<div class="card">
+	<h1>Year Card</h1>
+
+	<label class="container">2021
+  	  <input type="checkbox" onclick="myFunction1()">
+  	  <span class="checkmark"></span>
+	</label>
+	<label class="container">2022
+  	  <input type="checkbox" onclick="myFunction2()">
+  	  <span class="checkmark"></span>
+	</label>
+	<label class="container">2023
+  	  <input type="checkbox" onclick="myFunction3()">
+  	  <span class="checkmark"></span>
+	</label>
+
+
+
+</div>
+
+
+<div class="card">
+<div id="myDIV1">
+<form action="/action_page.php">
+   <label for="Choose">Choose from 2021:</label>
+   <select name="years" id="years">
+    <option value="" selected disabled hidden>Choose here</option>
+    <option value="Jan-Apr" onchange="Func1()">Jan-Apr</option>
+    <option value="May-Aug">May-Aug</option>
+    <option value="Sep-Dec">Sep-Dec</option>
+   </select>
+  <div class="card">
+  <form>
+  <label for="Jan">Jan:</label>
+  <input type="number" id="fname" name="fname"><br>
+  <label for="Feb">Feb:</label>
+  <input type="number" id="fname" name="fname"><br>
+  <label for="Mar">Mar:</label>
+  <input type="number" id="fname" name="fname"><br>
+  <label for="Apr">Apr:</label>
+  <input type="number" id="fname" name="fname"><br>
+  </form>
+  </div>
+	
+</form>
+</div>
+</div>
+
+
+
+
+<div class="card">
+<div id="myDIV2">
+<form action="/action_page.php">
+   <label for="Choose">Choose from 2022:</label>
+   <select name="years" id="years">
+    <option value="" selected disabled hidden>Choose here</option>
+    <option value="Jan-Apr" onchange="Func1()">Jan-Apr</option>
+    <option value="May-Aug">May-Aug</option>
+    <option value="Sep-Dec">Sep-Dec</option>
+   </select>
+  <div class="card">
+  <form>
+  <label for="Jan">Jan:</label>
+  <input type="number" id="fname" name="fname"><br>
+  <label for="Feb">Feb:</label>
+  <input type="number" id="fname" name="fname"><br>
+  <label for="Mar">Mar:</label>
+  <input type="number" id="fname" name="fname"><br>
+  <label for="Apr">Apr:</label>
+  <input type="number" id="fname" name="fname"><br>
+  </form>
+  </div>
+	
+</form>
+</div>
+</div>
+
+<div class="card">
+<div id="myDIV3">
+<form action="/action_page.php">
+   <label for="Choose">Choose from 2023:</label>
+   <select name="years" id="years">
+    <option value="" selected disabled hidden>Choose here</option>
+    <option value="Jan-Apr" onchange="Func1()">Jan-Apr</option>
+    <option value="May-Aug">May-Aug</option>
+    <option value="Sep-Dec">Sep-Dec</option>
+   </select>
+  <div class="card">
+  <form>
+  <label for="Jan">Jan:</label>
+  <input type="number" id="fname" name="fname"><br>
+  <label for="Feb">Feb:</label>
+  <input type="number" id="fname" name="fname"><br>
+  <label for="Mar">Mar:</label>
+  <input type="number" id="fname" name="fname"><br>
+  <label for="Apr">Apr:</label>
+  <input type="number" id="fname" name="fname"><br>
+  </form>
+  </div>
+	
+</form>
+</div>
+</div>
+
+</body>
+
+
+<script>
+function myFunction1() {
+  var x = document.getElementById("myDIV1");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function myFunction2() {
+  var x = document.getElementById("myDIV2");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function myFunction3() {
+  var x = document.getElementById("myDIV3");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function funcform1(){
+    var card = document.getElementByName("cards")[0].value;
+    if (card.value == selectcard) {
+    alert("Please select a card type");
+   }
+}
+
+function myFunc1() {
+  var x = document.getElementById("mybox1");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function showHide()
+ {
+   hideAll();
+  var val = document.getElementById("dropdown").value;
+
+  if(val == "A")
+   document.getElementById("firstTextBoxId").style.display = 'block';
+  else if(val == "B")
+   document.getElementById("secondTextBoxId").style.display = 'block';
+  else if(val == "C")
+   document.getElementById("ThirdTextBoxId").style.display = 'block';
+  else if(val == "D")
+   document.getElementById("FourthTextBoxId").style.display = 'block';
+
+}
+
+
+function hideAll()
+   {
+      document.getElementById("firstTextBoxId").style.display = 'none';
+      document.getElementById("secondTextBoxId").style.display = 'none';
+      document.getElementById("thirdTextBoxId").style.display = 'none';
+      document.getElementById("fourthTextBoxId").style.display = 'none';
+
+    }
+
+
+</script>
+</html>
